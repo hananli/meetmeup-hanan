@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:id="@+id/back_customerow"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:gravity="right"
+        android:padding="5dp"
+        android:tag="back_customerow" >
+
+        <TextView
+            android:id="@+id/editButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/red"
+            android:gravity="center"
+            android:minEms="7"
+            android:padding="15dp"
+            android:text="Edit"
+            android:textColor="@color/white"
+            android:textSize="10dp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/swipe_button1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/selected_bg"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="Invite Friends"
+            android:textColor="@color/white"
+            android:textSize="10dp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/swipe_button2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/unselect_bg"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="Delete Event"
+            android:textColor="@color/red_text"
+            android:textSize="10dp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/front_customrow"
+        style="@style/MyListFrontContent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:tag="front"
+        android:visibility="visible" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/bgshort"
+                android:orientation="vertical"
+                android:padding="8dp" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/event_owner_image"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/default_user" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:padding="2dp"
+                        android:text="Owner: "
+                        android:textColor="@color/grey_line_color"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/event_owner_name"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="1"
+                        android:padding="2dp"
+                        android:textColor="@color/red_text" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/event_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:text="Event Name"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:background="@color/grey_line_color"
+                android:orientation="vertical"
+                android:padding="8dp" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="28dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/event_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp"
+                        android:text="date"
+                        android:textColor="@color/headercolor"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/event_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp"
+                        android:text="time"
+                        android:textColor="@color/headercolor"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/event_Address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:text="Address :"
+                    android:textColor="@color/headercolor"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/participants_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/round_white"
+                        android:padding="10dp"
+                        android:text="+15"
+                        android:textColor="@color/headercolor"
+                        android:textSize="10sp" />
+
+                    <Gallery
+                        android:id="@+id/participant_view"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@android:color/transparent"
+                        android:spacing="5dp"
+                       />
+
+                    <TextView
+                        android:id="@+id/event_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/round_white"
+                        android:padding="10dp"
+                        android:text=""
+                        android:textColor="@color/headercolor"
+                        android:textSize="10sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/join_linear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="80dp"
+                android:orientation="vertical" >
+
+                <com.meetmeup.helper.RoundedImageView
+                    android:id="@+id/join_image"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/circleview_blue_xml"
+                    android:clickable="false"
+                    android:padding="3dp"                 
+                    android:src="@drawable/joined_icon" />
+
+                
+                <TextView
+                    android:id="@+id/join_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:clickable="false"
+                    android:text="joined"
+                    android:textColor="@color/headercolor"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+                
+            </LinearLayout>
+            
+        </FrameLayout>
+    </RelativeLayout>
+
+</FrameLayout>

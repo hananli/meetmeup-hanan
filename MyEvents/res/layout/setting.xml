@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    android:paddingTop="10dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" >
+
+        <TextView
+            android:id="@+id/profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:padding="10dp"
+            android:text="My Profile"
+            android:textColor="@color/red_text" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5px"
+            android:background="@color/grey_line_color" />
+
+        <TextView
+            android:id="@+id/Radius"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Search Area"
+            android:textColor="@color/red_text" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5px"
+            android:background="@color/grey_line_color" />
+
+    
+        <TextView
+            android:id="@+id/share_on_fb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Invite Facebook Friends"
+            android:textColor="@color/red_text" />
+         <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5px"
+            android:background="@color/grey_line_color" />
+        <TextView
+            android:id="@+id/share_on_wall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Share on Facebook"
+            android:textColor="@color/red_text" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5px"
+            android:background="@color/grey_line_color" />
+
+        <LinearLayout
+            android:id="@+id/notificationL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <!-- <CheckBox
+                android:id="@+id/checkboxC"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:button="@drawable/checkbox_selector"
+                android:checked="false"
+                android:clickable="false"
+                android:padding="10dp"
+                android:visibility="gone" /> -->
+
+            <TextView
+                android:id="@+id/notification_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:clickable="false"
+                android:padding="10dp"
+                android:text="Notification"
+                android:textColor="@color/red_text" />
+                        
+        </LinearLayout>
+
+          <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5px"
+            android:background="@color/grey_line_color" />
+          
+        
+          <TextView
+                android:id="@+id/sort_option"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:clickable="false"
+                android:padding="10dp"
+                android:text="Sort Option"
+                android:textColor="@color/red_text" />
+                
+          <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5px"
+            android:background="@color/grey_line_color" />
+
+        <TextView
+            android:id="@+id/tutorial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Tutorial"
+            android:textColor="@color/red_text" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5px"
+            android:background="@color/grey_line_color" />
+
+        <TextView
+            android:id="@+id/logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Logout"
+            android:textColor="@color/red_text" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5px"
+            android:background="@color/grey_line_color" />
+
+        <TextView
+            android:id="@+id/facebook_friends"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Facebook Friends"
+            android:textColor="@color/red_text"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5px"
+            android:background="@color/grey_line_color" />
+
+       <!--  <TextView
+            android:id="@+id/txtview_preference"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Preferences"
+            android:textColor="@color/red_text"
+             /> -->
+    </LinearLayout>
+
+   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/homeIV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:src="@drawable/home_deactive_btn" />
+
+        <ImageView
+            android:id="@+id/settingIV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:src="@drawable/setting_active_btn"/>
+
+        <ImageView
+            android:id="@+id/createEventIV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:src="@drawable/create_event_deactive_btn" />
+
+        <ImageView
+            android:id="@+id/myEventsIV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:src="@drawable/my_event_deactive_btn" />
+
+        <ImageView
+            android:id="@+id/nearByEventsIV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:src="@drawable/nearby_deactive_btn" />
+    </LinearLayout>
+
+</LinearLayout>

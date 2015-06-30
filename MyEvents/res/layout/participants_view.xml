@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:padding="5dp"
+        android:src="@drawable/default_user"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/image"
+         />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Shahid Khan"
+        android:layout_gravity="center_vertical"
+        android:textColor="@color/black" 
+        android:padding="10dp"
+        android:singleLine="true"
+        />
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text="Accept"
+        android:singleLine="true"
+        android:textColor="@color/black" 
+        android:padding="10dp"
+        />
+    <TextView
+        android:id="@+id/amount_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text="(Not Paid)"
+        android:singleLine="true"
+        android:textColor="@color/black" 
+        android:padding="10dp"
+        />
+
+</LinearLayout>
